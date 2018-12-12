@@ -1,5 +1,9 @@
 const aws = require('aws-sdk');
-aws.config.update({region:'us-east-1'});
+aws.config.update({
+    region:'us-east-1',
+    accessKeyId: 'AKIAIJHPD47W7EI5GNMA',
+    secretAccessKey: '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'
+});
 
 module.exports = {
     getPrediction: function(record) {
