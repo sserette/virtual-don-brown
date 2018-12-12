@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Virtual Don Brown</title>
+        <meta charset="UTF-8">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/styles.css" type="text/css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="./js/app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Virtual Don Brown</h1>
+            <div class="col-md-6 col-md-offset-3" id="description">One of the most valuable assets in the game of football is the ability to anticipate a play call. Virtual Don Brown predicts whether the inputted football play will be a run or a pass. A machine learning model was trained on 500,000 NFL plays ranging from the 2009-2017 seasons. According to Amazon Web Services, the model is 82% accurate, while 18% are errors. Training data can be found on <a href="https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016" target="_blank">Kaggle</a>.</div>
+            <form class="col-md-6 col-md-offset-3">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="text" class="form-control" id="date" />
+                </div>
+                <div class="form-group">
+                    <label for="gameId">Game ID</label>
+                    <input type="text" class="form-control" id="gameId" />
+                </div>
+                <div class="form-group">
+                    <label for="drive">Drive</label>
+                    <input type="text" class="form-control" id="drive" />
+                </div>
+                <div class="form-group">
+                    <label for="quarter">Quarter</label>
+                    <input type="text" class="form-control" id="quarter" />
+                </div>
+                <div class="form-group">
+                    <label for="down">Down number</label>
+                    <input type="text" class="form-control" id="down" />
+                </div>
+                <div class="form-group">
+                    <label for="time">Time left in quarter</label>
+                    <input type="text" class="form-control" id="time" />
+                </div>
+                <div class="form-group">
+                    <label for="timeUnder">Time under</label>
+                    <input type="text" class="form-control" id="timeUnder" />
+                </div>
+                <div class="form-group">
+                    <label for="timeInSec">Time remaining in seconds</label>
+                    <input type="text" class="form-control" id="timeInSec" />
+                </div>
+                <div class="form-group">
+                    <label for="playTimeDiff">Play time differential</label>
+                    <input type="text" class="form-control" id="playTimeDiff" />
+                </div>
+                <div class="form-group">
+                    <label for="side">Side of field</label>
+                    <input type="text" class="form-control" id="side" />
+                </div>
+                <div class="form-group">
+                    <label for="yardLine">Yard line</label>
+                    <input type="text" class="form-control" id="yardLine" />
+                </div>
+                <div class="form-group">
+                    <label for="yardsFromOwnGoal">Yards from own goal line</label>
+                    <input type="text" class="form-control" id="yardsFromOwnGoal" />
+                </div>
+                <div class="form-group">
+                    <label for="yardsToGo">Yards to go</label>
+                    <input type="text" class="form-control" id="yardsToGo" />
+                </div>
+                <div class="form-group">
+                    <label for="netYards">Net yards</label>
+                    <input type="text" class="form-control" id="netYards" />
+                </div>
+                <div class="form-group">
+                    <label for="goalToGo">Goal to go?</label>
+                    <input type="text" class="form-control" id="goalToGo" />
+                </div>
+                <div class="form-group">
+                    <label for="firstDown">Does the play result in a first down for either team?</label>
+                    <input type="text" class="form-control" id="firstDown" />
+                </div>
+                <div class="form-group">
+                    <label for="possessingTeam">Possessing team</label>
+                    <input type="text" class="form-control" id="possessingTeam" />
+                </div>
+                <div class="form-group">
+                    <label for="defendingTeam">Defending team</label>
+                    <input type="text" class="form-control" id="defendingTeam" />
+                </div>
+                <div class="form-group">
+                    <label for="yardsGained">Yards gained</label>
+                    <input type="text" class="form-control" id="yardsGained" />
+                </div>
+                <div class="form-group">
+                    <label for="touchdown">Touchdown?</label>
+                    <input type="text" class="form-control" id="touchdown" />
+                </div>
+                <div class="form-group">
+                    <label for="safety">Safety?</label>
+                    <input type="text" class="form-control" id="safety" />
+                </div>
+                <div class="form-group">
+                    <label for="tackler1">Tackler 1</label>
+                    <input type="text" class="form-control" id="tackler1" />
+                </div>
+                <div class="form-group">
+                    <label for="tackler2">Tackler 2</label>
+                    <input type="text" class="form-control" id="tackler2" />
+                </div>
+                <div class="form-group">
+                    <label for="fumble">Fumble?</label>
+                    <input type="text" class="form-control" id="fumble" />
+                </div>
+                <div class="form-group">
+                    <label for="fumbleRecoveringTeam">Fumble recovering team</label>
+                    <input type="text" class="form-control" id="fumbleRecoveringTeam" />
+                </div>
+                <div class="form-group">
+                    <label for="fumbleRecoveringPlayer">Fumble recovering player</label>
+                    <input type="text" class="form-control" id="fumbleRecoveringPlayer" />
+                </div>
+                <div class="form-group">
+                    <label for="possScore">Score of possessing team</label>
+                    <input type="text" class="form-control" id="possScore" />
+                </div>
+                <div class="form-group">
+                    <label for="defScore">Score of defending team</label>
+                    <input type="text" class="form-control" id="defScore" />
+                </div>
+                <div class="form-group">
+                    <label for="scoreDiff">Score difference</label>
+                    <input type="text" class="form-control" id="scoreDiff" />
+                </div>
+                <div class="form-group">
+                    <label for="homeTeam">Home team</label>
+                    <input type="text" class="form-control" id="homeTeam" />
+                </div>
+                <div class="form-group">
+                    <label for="awayTeam">Away team</label>
+                    <input type="text" class="form-control" id="awayTeam" />
+                </div>
+                <div class="form-group">
+                    <label for="homeTimeouts">Home timeouts remaining</label>
+                    <input type="text" class="form-control" id="homeTimeouts" />
+                </div>
+                <div class="form-group">
+                    <label for="awayTimeouts">Away timeouts remaining</label>
+                    <input type="text" class="form-control" id="awayTimeouts" />
+                </div>
+                <div class="form-group">
+                    <label for="fieldGoalProb">Field goal probability</label>
+                    <input type="text" class="form-control" id="fieldGoalProb" />
+                </div>
+                <div class="form-group">
+                    <label for="safetyProb">Safety probability</label>
+                    <input type="text" class="form-control" id="safetyProb" />
+                </div>
+                <div class="form-group">
+                    <label for="touchdownProb">Touchdown probability</label>
+                    <input type="text" class="form-control" id="touchdownProb" />
+                </div>
+                <div class="form-group">
+                    <label for="winProb">Win probability</label>
+                    <input type="text" class="form-control" id="winProb" />
+                </div>
+                <div class="form-group">
+                    <label for="winProbAdded">Win probability added</label>
+                    <input type="text" class="form-control" id="winProbAdded" />
+                </div>
+                <div class="form-group">
+                    <label for="season">Season</label>
+                    <input type="text" class="form-control" id="season" />
+                </div>
+                <div class="btn-container">
+                    <button type="button" class="btn btn-primary" id="predict-btn">Predict</button>
+                </div>
+            </form>
+            <h2 class="col-md-12 text-center">Play type: <span id="prediction"></span></h2>
+        </div>
+        <footer class="text-center">
+            <h4>Steven Serette <a href="https://github.com/sserette" target="_blank">@sserette</a>, 2018</h4>
+        </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
