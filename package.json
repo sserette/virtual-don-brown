@@ -17,5 +17,8 @@
     "fs": "0.0.1-security",
     "jquery": "^3.3.1",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.8"
   }
 }
