@@ -4,6 +4,5 @@
 
 ### Running instructions
 1. `npm install` (first time)
-2. `npm install -g nodemon` (first time)
-3. `npm start`
-4. Navigate to localhost:8080
+2. `npm start`
+3. Navigate to localhost:8080
